@@ -1,0 +1,137 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    background-color: transparent; /* or black if needed */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section::before {
+    content: "";
+    background: url('viego.jpg') no-repeat center top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+
+
+.hero-text {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Cards Hover Effect */
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+/* Section Spacing */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Adjust the height of the navbar */
+.navbar {
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Opaque class when scrolled */
+.navbar.scrolled {
+  background-color: #000000; /* or any solid color you prefer */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.project-card {
+  width: 200px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.project-card h5 {
+  margin: 12px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0A1172; /* Dark Blue */
+}
