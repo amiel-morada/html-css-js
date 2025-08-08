@@ -130,8 +130,14 @@ section {
 }
 
 .project-card h5 {
-  margin: 12px 0 0;
-  font-size: 1rem;
+  margin: 10px 0 0;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #0A1172; /* Dark Blue */
+}
+
+.project-card p {
+  font-size: 0.95rem; 
+  color: #000000;
+  margin-top: 5px;
 }
